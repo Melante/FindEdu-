@@ -1,0 +1,60 @@
+.directing {
+    &__body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--overlay-body, rgba(45, 56, 63, 0.6));
+        
+    }
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__item-open{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        &::after{
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-image: url("../../img/svg/arrow-down.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: transform 0.5s ease;
+        }
+    }
+
+    &__sublist {
+        position: absolute;
+        overflow: hidden;
+        line-height: 0;
+        background-color: $back-primary;
+    }
+
+    &__sublist--open {
+        padding: 0;
+        list-style: none;
+        line-height: 1;        
+    }
+
+    &__submenu--icon {
+        &::after {
+            transform: rotate(180deg);
+            transition: transform 0.5s ease;
+        }
+    }
+}

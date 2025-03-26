@@ -1,5 +1,10 @@
 // Colors
 // ---------------------------------
+$back-primary: #fafafa;
+$back-secondary: rgba(0, 0, 0, 0.21);
+$text-primary: #454545;
+$text-secondary: #1d5cbb;
+
 
 // Default
 
@@ -27,9 +32,9 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble:                         "Rouble", "Arial", sans-serif;
+$ff-rouble:                         "inter", "Arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-placeholder:                    "inter", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
